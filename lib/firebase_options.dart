@@ -67,7 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '724858750759',
     projectId: 'allaccessdata-31c7e',
     storageBucket: 'allaccessdata-31c7e.appspot.com',
-    iosClientId: '724858750759-550oti4841njfo7k6llio1ap6pvbb6kd.apps.googleusercontent.com',
+    iosClientId:
+        '724858750759-550oti4841njfo7k6llio1ap6pvbb6kd.apps.googleusercontent.com',
     iosBundleId: 'com.example.hackApp',
   );
 
@@ -77,7 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '724858750759',
     projectId: 'allaccessdata-31c7e',
     storageBucket: 'allaccessdata-31c7e.appspot.com',
-    iosClientId: '724858750759-550oti4841njfo7k6llio1ap6pvbb6kd.apps.googleusercontent.com',
+    iosClientId:
+        '724858750759-550oti4841njfo7k6llio1ap6pvbb6kd.apps.googleusercontent.com',
     iosBundleId: 'com.example.hackApp',
   );
 }

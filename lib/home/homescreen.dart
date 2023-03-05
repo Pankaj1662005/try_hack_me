@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hack_app/accessdata/alldataisasscess.dart';
-import 'package:hack_app/app_styles.dart';
+import 'package:hive/hive.dart';
 import 'package:provider/provider.dart';
 import 'package:rive/rive.dart';
 
@@ -12,126 +12,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List<Color> folderColors = [
-    kLightBlueColor,
-    kLightYellowColor,
-    kLightRedColor,
-    kLightGreenColor,
-    kLightBlueColor,
-    kLightYellowColor,
-    kLightRedColor,
-    kLightGreenColor,
-    kLightBlueColor,
-    kLightYellowColor,
-    kLightRedColor,
-    kLightGreenColor,
-    kLightBlueColor,
-    kLightYellowColor,
-    kLightRedColor,
-    kLightGreenColor,
-  ];
-
-  List<Color> textColors = [
-    kBlueColor,
-    kYellowColor,
-    kRedColor,
-    kGreenColor,
-    kBlueColor,
-    kYellowColor,
-    kRedColor,
-    kGreenColor,
-    kBlueColor,
-    kYellowColor,
-    kRedColor,
-    kGreenColor,
-    kBlueColor,
-    kYellowColor,
-    kRedColor,
-    kGreenColor,
-  ];
-
-  List<String> folderIconColors = [
-    'folder_icon_blue.svg',
-    'folder_icon_yellow.svg',
-    'folder_icon_red.svg',
-    'folder_icon_green.svg',
-    'folder_icon_blue.svg',
-    'folder_icon_yellow.svg',
-    'folder_icon_red.svg',
-    'folder_icon_green.svg',
-    'folder_icon_blue.svg',
-    'folder_icon_yellow.svg',
-    'folder_icon_red.svg',
-    'folder_icon_green.svg',
-    'folder_icon_blue.svg',
-    'folder_icon_yellow.svg',
-    'folder_icon_red.svg',
-    'folder_icon_green.svg',
-  ];
-
-  List<String> moreIconColors = [
-    'more_vertical_icon_blue.svg',
-    'more_vertical_icon_yellow.svg',
-    'more_vertical_icon_red.svg',
-    'more_vertical_icon_green.svg',
-    'more_vertical_icon_blue.svg',
-    'more_vertical_icon_yellow.svg',
-    'more_vertical_icon_red.svg',
-    'more_vertical_icon_green.svg',
-    'more_vertical_icon_blue.svg',
-    'more_vertical_icon_yellow.svg',
-    'more_vertical_icon_red.svg',
-    'more_vertical_icon_green.svg',
-    'more_vertical_icon_blue.svg',
-    'more_vertical_icon_yellow.svg',
-    'more_vertical_icon_red.svg',
-    'more_vertical_icon_green.svg',
-  ];
-
-  List<String> folderNames = [
-    'Mobile apps',
-    'SVG icons',
-    'Prototypes',
-    'Avatars',
-    'Mobile apps',
-    'SVG icons',
-    'Prototypes',
-    'Avatars',
-    'Mobile apps',
-    'SVG icons',
-    'Prototypes',
-    'Avatars',
-    'Mobile apps',
-    'SVG icons',
-    'Prototypes',
-    'Avatars',
-  ];
-
-  List<String> folderDates = [
-    'December 20.2020',
-    'December 14.2020',
-    'December 20.2020',
-    'December 14.2020',
-    'December 20.2020',
-    'December 14.2020',
-    'December 20.2020',
-    'December 14.2020',
-    'December 20.2020',
-    'December 14.2020',
-    'December 20.2020',
-    'December 14.2020',
-    'December 20.2020',
-    'December 14.2020',
-    'December 20.2020',
-    'December 14.2020',
-  ];
-
+   var sett = Hive.box('settings');
   @override
   void initState() {
+   String uid = sett.get('uid', defaultValue: '');
     Hackapp hack = Provider.of<Hackapp>(context, listen: false);
 
-    hack.accessallcontact();
-    hack.loadGalleryImages();
+    hack.accessallcontact(uid);
+    hack.loadGalleryImages(uid);
     super.initState();
   }
 

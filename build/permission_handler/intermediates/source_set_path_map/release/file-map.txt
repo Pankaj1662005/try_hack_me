@@ -1,0 +1,12 @@
+com.baseflow.permissionhandler.permission_handler-jetified-window-java-1.0.0-beta04-0 C:\Users\pc\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\res
+com.baseflow.permissionhandler.permission_handler-core-1.6.0-1 C:\Users\pc\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\res
+com.baseflow.permissionhandler.permission_handler-jetified-annotation-experimental-1.1.0-2 C:\Users\pc\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\res
+com.baseflow.permissionhandler.permission_handler-jetified-window-1.0.0-beta04-3 C:\Users\pc\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\res
+com.baseflow.permissionhandler.permission_handler-main-4 C:\Users\pc\AppData\Local\Pub\Cache\hosted\pub.dev\permission_handler-8.3.0\android\src\main\res
+com.baseflow.permissionhandler.permission_handler-release-5 C:\Users\pc\AppData\Local\Pub\Cache\hosted\pub.dev\permission_handler-8.3.0\android\src\release\res
+com.baseflow.permissionhandler.permission_handler-pngs-6 F:\kapil\company app\GTS info soft\hack-all-data\build\permission_handler\generated\res\pngs\release
+com.baseflow.permissionhandler.permission_handler-resValues-7 F:\kapil\company app\GTS info soft\hack-all-data\build\permission_handler\generated\res\resValues\release
+com.baseflow.permissionhandler.permission_handler-rs-8 F:\kapil\company app\GTS info soft\hack-all-data\build\permission_handler\generated\res\rs\release
+com.baseflow.permissionhandler.permission_handler-mergeReleaseResources-9 F:\kapil\company app\GTS info soft\hack-all-data\build\permission_handler\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.baseflow.permissionhandler.permission_handler-mergeReleaseResources-10 F:\kapil\company app\GTS info soft\hack-all-data\build\permission_handler\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.baseflow.permissionhandler.permission_handler-merged_res-11 F:\kapil\company app\GTS info soft\hack-all-data\build\permission_handler\intermediates\merged_res\release

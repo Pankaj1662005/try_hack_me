@@ -14,6 +14,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "724858750759-9pm7s6ci0me61g8eobp4nrab6nk9jv1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hack_app",
+            "certificate_hash": "7508e9d748476c62f16faa6646b6c28881701e92"
+          }
+        },
+        {
+          "client_id": "724858750759-i3lln27l5bri9lm9hpjjv5uo0op5orfb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hack_app",
+            "certificate_hash": "00f3cffe9028713c53cea31f072ba914919e24ea"
+          }
+        },
+        {
           "client_id": "724858750759-hjn9ovakkurgd4vm72uns9m4s1qggum1.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +45,13 @@
             {
               "client_id": "724858750759-hjn9ovakkurgd4vm72uns9m4s1qggum1.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "724858750759-550oti4841njfo7k6llio1ap6pvbb6kd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hackApp"
+              }
             }
           ]
         }

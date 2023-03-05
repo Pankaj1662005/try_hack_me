@@ -1,0 +1,4 @@
+#Sun Mar 05 18:52:25 IST 2023
+base.0=F\:\\kapil\\company app\\GTS info soft\\hack-all-data\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

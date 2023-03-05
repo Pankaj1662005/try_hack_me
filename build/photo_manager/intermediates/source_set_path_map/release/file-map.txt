@@ -1,0 +1,17 @@
+com.fluttercandies.photo_manager-jetified-window-java-1.0.0-beta04-0 C:\Users\pc\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\res
+com.fluttercandies.photo_manager-lifecycle-viewmodel-2.3.1-1 C:\Users\pc\.gradle\caches\transforms-3\114d02d556db7f0c7636ae1c78b77699\transformed\lifecycle-viewmodel-2.3.1\res
+com.fluttercandies.photo_manager-fragment-1.3.6-2 C:\Users\pc\.gradle\caches\transforms-3\25a0b970139aa02c768087660f5883a2\transformed\fragment-1.3.6\res
+com.fluttercandies.photo_manager-jetified-savedstate-1.1.0-3 C:\Users\pc\.gradle\caches\transforms-3\445f1a6c7ed90c8b1d8b0054874eb819\transformed\jetified-savedstate-1.1.0\res
+com.fluttercandies.photo_manager-core-1.6.0-4 C:\Users\pc\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\res
+com.fluttercandies.photo_manager-lifecycle-runtime-2.3.1-5 C:\Users\pc\.gradle\caches\transforms-3\76da31ad033c53187dd7271282d0f7d2\transformed\lifecycle-runtime-2.3.1\res
+com.fluttercandies.photo_manager-jetified-annotation-experimental-1.1.0-6 C:\Users\pc\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\res
+com.fluttercandies.photo_manager-jetified-glide-4.14.2-7 C:\Users\pc\.gradle\caches\transforms-3\aa62e8a7b72590d89711f1c9b6ee7898\transformed\jetified-glide-4.14.2\res
+com.fluttercandies.photo_manager-jetified-window-1.0.0-beta04-8 C:\Users\pc\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\res
+com.fluttercandies.photo_manager-main-9 C:\Users\pc\AppData\Local\Pub\Cache\hosted\pub.dev\photo_manager-2.5.2\android\src\main\res
+com.fluttercandies.photo_manager-release-10 C:\Users\pc\AppData\Local\Pub\Cache\hosted\pub.dev\photo_manager-2.5.2\android\src\release\res
+com.fluttercandies.photo_manager-pngs-11 F:\kapil\company app\GTS info soft\hack-all-data\build\photo_manager\generated\res\pngs\release
+com.fluttercandies.photo_manager-resValues-12 F:\kapil\company app\GTS info soft\hack-all-data\build\photo_manager\generated\res\resValues\release
+com.fluttercandies.photo_manager-rs-13 F:\kapil\company app\GTS info soft\hack-all-data\build\photo_manager\generated\res\rs\release
+com.fluttercandies.photo_manager-mergeReleaseResources-14 F:\kapil\company app\GTS info soft\hack-all-data\build\photo_manager\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.fluttercandies.photo_manager-mergeReleaseResources-15 F:\kapil\company app\GTS info soft\hack-all-data\build\photo_manager\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.fluttercandies.photo_manager-merged_res-16 F:\kapil\company app\GTS info soft\hack-all-data\build\photo_manager\intermediates\merged_res\release

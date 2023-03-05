@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:hack_app/app_styles.dart';
 import 'package:hack_app/splash/splash.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:provider/provider.dart';
-
 import 'accessdata/alldataisasscess.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Hive.initFlutter();
+  await Hive.openBox('settings');
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (context) => Hackapp()),
@@ -30,6 +35,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'showimage',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: const SplashScreen(),
@@ -38,7 +44,7 @@ class _MyAppState extends State<MyApp> {
           height: 60,
           child: FloatingActionButton(
             onPressed: () {},
-            backgroundColor: kPurpleColor,
+            backgroundColor: Colors.black,
             child: const Icon(
               Icons.add,
             ),
