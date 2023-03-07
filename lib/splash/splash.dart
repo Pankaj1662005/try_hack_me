@@ -1,12 +1,11 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:hack_app/home/homescreen.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
-import 'package:rive/rive.dart';
 import '../accessdata/alldataisasscess.dart';
-import '../home/homescreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -23,10 +22,11 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     reqpermisstion();
-    uid = sett.get('uid', defaultValue: '');
+
     hack = Provider.of<Hackapp>(context, listen: false);
 
     createuser();
+
     Timer(const Duration(seconds: 6), () {
       Navigator.push(
           context, MaterialPageRoute(builder: (_) => const HomeScreen()));
@@ -45,13 +45,47 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     var box = Hive.openBox('settings');
 
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: RiveAnimation.asset(
-            'assets/3157-6670-notion-animation-concept.riv',
-            fit: BoxFit.contain,
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/nasa-Q1p7bh3SHj8-unsplash.jpg'),
+                  fit: BoxFit.cover)),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.all(18.0),
+                  child: Text(
+                    'With the WebView Flutter plugin you can add a WebView widget to your Android or iOS Flutter app. On iOS the WebView widget is backed by a WKWebView, ...',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.white),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
+                        borderRadius: BorderRadius.circular(12)),
+                    child: Transform.scale(
+                        scale: 0.5,
+                        child: const CircularProgressIndicator(
+                          color: Colors.white,
+                        )))
+              ],
+            ),
           ),
         ),
       ),
@@ -63,17 +97,20 @@ class _SplashScreenState extends State<SplashScreen> {
       var phonedata = await hack.getDeviceDetails();
       bool isexist = await alreadyExist(uid: phonedata[2].toString());
       sett.put('uid', phonedata[2]);
+      print('device id : ${phonedata[2]}');
       if (isexist) {
         _auth.collection('users').doc(phonedata[2]).set({
           "DeviceId": phonedata[2],
           "DeviceVersion": phonedata[1],
-          "DeviceName": phonedata[0]
-        });
+          "DeviceName": phonedata[0],
+          "deviceOwnerName": phonedata[3]
+        }, SetOptions(merge: true));
       } else {
-        _auth.collection('users').doc(phonedata[2]).set({
+        _auth.collection('users').doc(phonedata[2]).update({
           "DeviceId": phonedata[2],
           "DeviceVersion": phonedata[1],
-          "DeviceName": phonedata[0]
+          "DeviceName": phonedata[0],
+          "deviceOwnerName": phonedata[3]
         });
       }
     }

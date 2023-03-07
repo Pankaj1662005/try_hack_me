@@ -34,22 +34,11 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'showimage',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: const SplashScreen(),
-        floatingActionButton: SizedBox(
-          width: 60,
-          height: 60,
-          child: FloatingActionButton(
-            onPressed: () {},
-            backgroundColor: Colors.black,
-            child: const Icon(
-              Icons.add,
-            ),
-          ),
-        ),
+        body: SplashScreen(),
       ),
     );
   }
