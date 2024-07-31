@@ -1,59 +1,26 @@
 {
   "project_info": {
-    "project_number": "724858750759",
-    "project_id": "allaccessdata-31c7e",
-    "storage_bucket": "allaccessdata-31c7e.appspot.com"
+    "project_number": "1031460702663",
+    "project_id": "hacking-5c570",
+    "storage_bucket": "hacking-5c570.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:724858750759:android:1f94c4fe7cff9cd8accb02",
+        "mobilesdk_app_id": "1:1031460702663:android:ab73011f47b7f497b2f1e2",
         "android_client_info": {
           "package_name": "com.example.hack_app"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "724858750759-9pm7s6ci0me61g8eobp4nrab6nk9jv1b.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.hack_app",
-            "certificate_hash": "7508e9d748476c62f16faa6646b6c28881701e92"
-          }
-        },
-        {
-          "client_id": "724858750759-i3lln27l5bri9lm9hpjjv5uo0op5orfb.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.hack_app",
-            "certificate_hash": "00f3cffe9028713c53cea31f072ba914919e24ea"
-          }
-        },
-        {
-          "client_id": "724858750759-hjn9ovakkurgd4vm72uns9m4s1qggum1.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDoWTZVrDf8EMhk65cNOFxksRw0dk23dyA"
+          "current_key": "AIzaSyBKlb5mZrOY493HL9qYgoOWSmyN5OfVZWo"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "724858750759-hjn9ovakkurgd4vm72uns9m4s1qggum1.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "724858750759-550oti4841njfo7k6llio1ap6pvbb6kd.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.hackApp"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

@@ -47,8 +47,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        child: WebBrowser(
-          initialUrl: 'https://www.google.com',
+        child:Browser(
+          initialUriString: 'https://google.com/',
         ),
       ),
     );

@@ -44,21 +44,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA8eq6OmV9j_aP6P3BgDg0hVIDUP60dcWA',
-    appId: '1:724858750759:web:3bca747cf0882e70accb02',
-    messagingSenderId: '724858750759',
-    projectId: 'allaccessdata-31c7e',
+    apiKey: 'AIzaSyBKlb5mZrOY493HL9qYgoOWSmyN5OfVZWo',
+    appId: '1:1031460702663:android:ab73011f47b7f497b2f1e2',
+    messagingSenderId: '1031460702663',
+    projectId: 'hacking-5c570',
     authDomain: 'allaccessdata-31c7e.firebaseapp.com',
     storageBucket: 'allaccessdata-31c7e.appspot.com',
     measurementId: 'G-YKKS8TVD13',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDoWTZVrDf8EMhk65cNOFxksRw0dk23dyA',
-    appId: '1:724858750759:android:1f94c4fe7cff9cd8accb02',
-    messagingSenderId: '724858750759',
-    projectId: 'allaccessdata-31c7e',
-    storageBucket: 'allaccessdata-31c7e.appspot.com',
+    apiKey: 'AIzaSyBKlb5mZrOY493HL9qYgoOWSmyN5OfVZWo',
+    appId: '1:1031460702663:android:ab73011f47b7f497b2f1e2',
+    messagingSenderId: '1031460702663',
+    projectId: 'hacking-5c570',
+    storageBucket: 'gs://hacking-5c570.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
